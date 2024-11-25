@@ -4,14 +4,14 @@ import 'package:provider/provider.dart';
 import '../viewmodels/calculator_viewmodel.dart';
 
 class CalculatorScreen extends StatelessWidget {
-  const CalculatorScreen({Key? key}) : super(key: key);
+  const CalculatorScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     final viewModel = context.watch<CalculatorViewModel>();
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Calculator')),
+      appBar: AppBar(title: const Text('CalC')),
       body: Column(
         children: [
           Expanded(
